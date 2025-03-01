@@ -1,0 +1,5 @@
+<div class="nav-container">
+    <div class="nav-item" [class.active]="navItem.active" *ngFor="let navItem of navItems" (click)="onNavItemClick(navItem)">
+        {{ navItem.title }}
+    </div>
+</div>

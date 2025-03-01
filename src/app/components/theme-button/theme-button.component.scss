@@ -1,0 +1,19 @@
+.theme-button-container {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+
+  &:hover {
+    cursor: pointer;
+    background: var(--lightbulb-background-hover);
+  }
+}
+
+.fa-lightbulb {
+  font-size: 2rem;
+  color: var(--mute-text-color);
+}

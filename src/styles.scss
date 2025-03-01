@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+// Default (light) theme variables
+:root {
+  --background-color: #ffffff;
+  --text-color: #00000091;
+  --text-active-color: #000000;
+  --mute-text-color: rgba(0, 0, 0, 0.493);
+  --mute-text-color-hover: rgba(0, 0, 0, 0.637);
+  --lightbulb-background-hover: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.493),
+    transparent 70%
+  );
+  font-family: "Amatic SC";
+}
+
+// Dark theme overrides
+.dark-theme {
+  --background-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --text-active-color: #ffffff;
+  --mute-text-color: rgba(255, 255, 255, 0.247);
+  --mute-text-color-hover: rgba(255, 255, 255, 0.479);
+  --lightbulb-background-hover: radial-gradient(
+    circle,
+    rgba(255, 251, 0, 0.623),
+    rgba(255, 255, 255, 0.205) 50%,
+    transparent 70%
+  );
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+app-theme-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}

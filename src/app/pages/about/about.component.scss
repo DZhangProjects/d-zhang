@@ -1,0 +1,14 @@
+.about-container {
+  font-family: "Quicksand";
+  font-size: 2rem;
+  padding: 0.5rem 0 0 4.5rem;
+  border-left: 1px solid var(--mute-text-color);
+  min-height: 40dvh;
+  max-width: 40dvw;
+}
+
+.about-title {
+  font-weight: bold;
+  color: var(--text-active-color);
+  padding-bottom: 1rem;
+}
